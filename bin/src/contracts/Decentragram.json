@@ -1,0 +1,738 @@
+{
+    "contractName": "Decentragram",
+    "abi": [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "name",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "images",
+            "outputs": [
+                {
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "name": "hash",
+                    "type": "string"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "name": "tipAmount",
+                    "type": "uint256"
+                },
+                {
+                    "name": "author",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "imageCount",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "uploadImage",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"images\",\"outputs\":[{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"hash\",\"type\":\"string\"},{\"name\":\"description\",\"type\":\"string\"},{\"name\":\"tipAmount\",\"type\":\"uint256\"},{\"name\":\"author\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"imageCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"uploadImage\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/decentragram/src/contracts/Decentragram.sol\":\"Decentragram\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/decentragram/src/contracts/Decentragram.sol\":{\"keccak256\":\"0x2b1d22e35f668e974bd84832faf9344f824540bc8b69e85484ff8fd58beaed1d\",\"urls\":[\"bzzr://577ac43fbbd52ea710cb604c26a7537e0b4db9bfeb81557bb081723766254112\"]}},\"version\":1}",
+    "bytecode": "60c0604052600c60808190527f446563656e7472616772616d000000000000000000000000000000000000000060a090815261003e9160009190610056565b50600060015534801561005057600080fd5b506100f1565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061009757805160ff19168380011785556100c4565b828001600101855582156100c4579182015b828111156100c45782518255916020019190600101906100a9565b506100d09291506100d4565b5090565b6100ee91905b808211156100d057600081556001016100da565b90565b61068b806101006000396000f3fe6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306fdde03811461006657806384856482146100f057806392053b6314610239578063e09fb11914610260575b600080fd5b34801561007257600080fd5b5061007b610277565b6040805160208082528351818301528351919283929083019185019080838360005b838110156100b557818101518382015260200161009d565b50505050905090810190601f1680156100e25780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100fc57600080fd5b5061011a6004803603602081101561011357600080fd5b5035610305565b6040518086815260200180602001806020018581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838103835287818151815260200191508051906020019080838360005b83811015610199578181015183820152602001610181565b50505050905090810190601f1680156101c65780820380516001836020036101000a031916815260200191505b50838103825286518152865160209182019188019080838360005b838110156101f95781810151838201526020016101e1565b50505050905090810190601f1680156102265780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b34801561024557600080fd5b5061024e61045f565b60408051918252519081900360200190f35b34801561026c57600080fd5b50610275610465565b005b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156102fd5780601f106102d2576101008083540402835291602001916102fd565b820191906000526020600020905b8154815290600101906020018083116102e057829003601f168201915b505050505081565b60026020818152600092835260409283902080546001808301805487519281161561010002600019011695909504601f81018590048502820185019096528581529094919390929091908301828280156103a05780601f10610375576101008083540402835291602001916103a0565b820191906000526020600020905b81548152906001019060200180831161038357829003601f168201915b50505060028085018054604080516020601f60001961010060018716150201909416959095049283018590048502810185019091528181529596959450909250908301828280156104325780601f1061040757610100808354040283529160200191610432565b820191906000526020600020905b81548152906001019060200180831161041557829003601f168201915b50505050600383015460049093015491929173ffffffffffffffffffffffffffffffffffffffff16905085565b60015481565b6040805160a081018252600180825282518084018452600681527f617364666173000000000000000000000000000000000000000000000000000060208281019190915280840191825284518086018652600d81527f48656c6c6f2c20576f726c642100000000000000000000000000000000000000818301529484019490945260006060840181905260808401819052919091526002835281517fe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e09081559051805192939192610559927fe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e19201906105c4565b50604082015180516105759160028401916020909101906105c4565b50606082015160038201556080909101516004909101805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff909216919091179055565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061060557805160ff1916838001178555610632565b82800160010185558215610632579182015b82811115610632578251825591602001919060010190610617565b5061063e929150610642565b5090565b61065c91905b8082111561063e5760008155600101610648565b9056fea165627a7a72305820bbc89c0488a5e956522e7ceef8e5f8d5626bc395fdf341d760aacd6bd181c13f0029",
+    "deployedBytecode": "6080604052600436106100615763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166306fdde03811461006657806384856482146100f057806392053b6314610239578063e09fb11914610260575b600080fd5b34801561007257600080fd5b5061007b610277565b6040805160208082528351818301528351919283929083019185019080838360005b838110156100b557818101518382015260200161009d565b50505050905090810190601f1680156100e25780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b3480156100fc57600080fd5b5061011a6004803603602081101561011357600080fd5b5035610305565b6040518086815260200180602001806020018581526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838103835287818151815260200191508051906020019080838360005b83811015610199578181015183820152602001610181565b50505050905090810190601f1680156101c65780820380516001836020036101000a031916815260200191505b50838103825286518152865160209182019188019080838360005b838110156101f95781810151838201526020016101e1565b50505050905090810190601f1680156102265780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b34801561024557600080fd5b5061024e61045f565b60408051918252519081900360200190f35b34801561026c57600080fd5b50610275610465565b005b6000805460408051602060026001851615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156102fd5780601f106102d2576101008083540402835291602001916102fd565b820191906000526020600020905b8154815290600101906020018083116102e057829003601f168201915b505050505081565b60026020818152600092835260409283902080546001808301805487519281161561010002600019011695909504601f81018590048502820185019096528581529094919390929091908301828280156103a05780601f10610375576101008083540402835291602001916103a0565b820191906000526020600020905b81548152906001019060200180831161038357829003601f168201915b50505060028085018054604080516020601f60001961010060018716150201909416959095049283018590048502810185019091528181529596959450909250908301828280156104325780601f1061040757610100808354040283529160200191610432565b820191906000526020600020905b81548152906001019060200180831161041557829003601f168201915b50505050600383015460049093015491929173ffffffffffffffffffffffffffffffffffffffff16905085565b60015481565b6040805160a081018252600180825282518084018452600681527f617364666173000000000000000000000000000000000000000000000000000060208281019190915280840191825284518086018652600d81527f48656c6c6f2c20576f726c642100000000000000000000000000000000000000818301529484019490945260006060840181905260808401819052919091526002835281517fe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e09081559051805192939192610559927fe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e19201906105c4565b50604082015180516105759160028401916020909101906105c4565b50606082015160038201556080909101516004909101805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff909216919091179055565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061060557805160ff1916838001178555610632565b82800160010185558215610632579182015b82811115610632578251825591602001919060010190610617565b5061063e929150610642565b5090565b61065c91905b8082111561063e5760008155600101610648565b9056fea165627a7a72305820bbc89c0488a5e956522e7ceef8e5f8d5626bc395fdf341d760aacd6bd181c13f0029",
+    "sourceMap": "54:35:0:-;27:453;54:35;;27:453;54:35;;;;;;;;;;-1:-1:-1;;54:35:0;;:::i;:::-;;138:1;113:26;;27:453;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:453:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:453:0;;;-1:-1:-1;27:453:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+    "deployedSourceMap": "27:453:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;54:35;;8:9:-1;5:2;;;30:1;27;20:12;5:2;54:35:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;54:35:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;144:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;144:36:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;144:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;144:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;144:36:0;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;144:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;113:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;113:26:0;;;;;;;;;;;;;;;;;;;;336:115;;8:9:-1;5:2;;;30:1;27;20:12;5:2;336:115:0;;;;;;54:35;;;;;;;;;;;;;;;-1:-1:-1;;54:35:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;144:36::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;144:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;144:36:0;;;;;;;;;;;-1:-1:-1;;144:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;144:36:0;;-1:-1:-1;144:36:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;144:36:0;;;;;;;;;;;;;;;-1:-1:-1;144:36:0;:::o;113:26::-;;;;:::o;336:115::-;385:60;;;;;;;;391:1;385:60;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;385:60:0;;;;;;;;;;;;373:9;;;;:6;:9;;:72;;:9;:72;;;;;;;385:60;;373:9;;:72;;;;;;;:::i;:::-;-1:-1:-1;373:72:0;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;373:72:0;;;;;;;;;;;;;;;;;;;-1:-1:-1;;373:72:0;;;;;;;;;;;336:115::o;27:453::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;27:453:0;;;-1:-1:-1;27:453:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o",
+    "sourcePath": "d:/decentragram/src/contracts/Decentragram.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.5.0+commit.1d4f565a"
+    },
+    "ast": {
+        "absolutePath": "d:/decentragram/src/contracts/Decentragram.sol",
+        "exportedSymbols": {
+            "Decentragram": [
+                43
+            ]
+        },
+        "id": 44,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.5",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 43,
+                "linearizedBaseContracts": [
+                    43
+                ],
+                "name": "Decentragram",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 4,
+                        "name": "name",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 43,
+                        "src": "54:35:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_string_storage",
+                            "typeString": "string"
+                        },
+                        "typeName": {
+                            "id": 2,
+                            "name": "string",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "54:6:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_string_storage_ptr",
+                                "typeString": "string"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "446563656e7472616772616d",
+                            "id": 3,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "75:14:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_483de360be352324e6ef7d99538d13af105db358291902b3c5b002f6928fdebc",
+                                "typeString": "literal_string \"Decentragram\""
+                            },
+                            "value": "Decentragram"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 7,
+                        "name": "imageCount",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 43,
+                        "src": "113:26:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                        },
+                        "typeName": {
+                            "id": 5,
+                            "name": "uint",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "113:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        },
+                        "value": {
+                            "argumentTypes": null,
+                            "hexValue": "30",
+                            "id": 6,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "number",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "138:1:0",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_rational_0_by_1",
+                                "typeString": "int_const 0"
+                            },
+                            "value": "0"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "constant": false,
+                        "id": 11,
+                        "name": "images",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 43,
+                        "src": "144:36:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$22_storage_$",
+                            "typeString": "mapping(uint256 => struct Decentragram.Image)"
+                        },
+                        "typeName": {
+                            "id": 10,
+                            "keyType": {
+                                "id": 8,
+                                "name": "uint",
+                                "nodeType": "ElementaryTypeName",
+                                "src": "152:4:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                }
+                            },
+                            "nodeType": "Mapping",
+                            "src": "144:22:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$22_storage_$",
+                                "typeString": "mapping(uint256 => struct Decentragram.Image)"
+                            },
+                            "valueType": {
+                                "contractScope": null,
+                                "id": 9,
+                                "name": "Image",
+                                "nodeType": "UserDefinedTypeName",
+                                "referencedDeclaration": 22,
+                                "src": "160:5:0",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_struct$_Image_$22_storage_ptr",
+                                    "typeString": "struct Decentragram.Image"
+                                }
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "canonicalName": "Decentragram.Image",
+                        "id": 22,
+                        "members": [
+                            {
+                                "constant": false,
+                                "id": 13,
+                                "name": "id",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 22,
+                                "src": "206:7:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 12,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "206:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 15,
+                                "name": "hash",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 22,
+                                "src": "220:11:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 14,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "220:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 17,
+                                "name": "description",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 22,
+                                "src": "238:18:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage_ptr",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 16,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "238:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 19,
+                                "name": "tipAmount",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 22,
+                                "src": "263:14:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint256",
+                                    "typeString": "uint256"
+                                },
+                                "typeName": {
+                                    "id": 18,
+                                    "name": "uint",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "263:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint256",
+                                        "typeString": "uint256"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            },
+                            {
+                                "constant": false,
+                                "id": 21,
+                                "name": "author",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 22,
+                                "src": "284:22:0",
+                                "stateVariable": false,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address_payable",
+                                    "typeString": "address payable"
+                                },
+                                "typeName": {
+                                    "id": 20,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "284:15:0",
+                                    "stateMutability": "payable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address_payable",
+                                        "typeString": "address payable"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "internal"
+                            }
+                        ],
+                        "name": "Image",
+                        "nodeType": "StructDefinition",
+                        "scope": 43,
+                        "src": "187:125:0",
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 41,
+                            "nodeType": "Block",
+                            "src": "366:85:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 39,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "baseExpression": {
+                                                "argumentTypes": null,
+                                                "id": 25,
+                                                "name": "images",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 11,
+                                                "src": "373:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Image_$22_storage_$",
+                                                    "typeString": "mapping(uint256 => struct Decentragram.Image storage ref)"
+                                                }
+                                            },
+                                            "id": 27,
+                                            "indexExpression": {
+                                                "argumentTypes": null,
+                                                "hexValue": "31",
+                                                "id": 26,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "380:1:0",
+                                                "subdenomination": null,
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_rational_1_by_1",
+                                                    "typeString": "int_const 1"
+                                                },
+                                                "value": "1"
+                                            },
+                                            "isConstant": false,
+                                            "isLValue": true,
+                                            "isPure": false,
+                                            "lValueRequested": true,
+                                            "nodeType": "IndexAccess",
+                                            "src": "373:9:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Image_$22_storage",
+                                                "typeString": "struct Decentragram.Image storage ref"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "arguments": [
+                                                {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "31",
+                                                    "id": 29,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "391:1:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_1_by_1",
+                                                        "typeString": "int_const 1"
+                                                    },
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "617364666173",
+                                                    "id": 30,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "string",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "393:8:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_stringliteral_2011dd816ee8560b7895dadee6af68017c38551f349fdd3cd77756c24130f8f9",
+                                                        "typeString": "literal_string \"asdfas\""
+                                                    },
+                                                    "value": "asdfas"
+                                                },
+                                                {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "48656c6c6f2c20576f726c6421",
+                                                    "id": 31,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "string",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "403:15:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_stringliteral_acaf3289d7b601cbd114fb36c4d29c85bbfd5e133f14cb355c3fd8d99367964f",
+                                                        "typeString": "literal_string \"Hello, World!\""
+                                                    },
+                                                    "value": "Hello, World!"
+                                                },
+                                                {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "30",
+                                                    "id": 32,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "420:1:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    },
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "argumentTypes": null,
+                                                    "arguments": [
+                                                        {
+                                                            "argumentTypes": null,
+                                                            "arguments": [
+                                                                {
+                                                                    "argumentTypes": null,
+                                                                    "hexValue": "307830",
+                                                                    "id": 35,
+                                                                    "isConstant": false,
+                                                                    "isLValue": false,
+                                                                    "isPure": true,
+                                                                    "kind": "number",
+                                                                    "lValueRequested": false,
+                                                                    "nodeType": "Literal",
+                                                                    "src": "439:3:0",
+                                                                    "subdenomination": null,
+                                                                    "typeDescriptions": {
+                                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                                        "typeString": "int_const 0"
+                                                                    },
+                                                                    "value": "0x0"
+                                                                }
+                                                            ],
+                                                            "expression": {
+                                                                "argumentTypes": [
+                                                                    {
+                                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                                        "typeString": "int_const 0"
+                                                                    }
+                                                                ],
+                                                                "id": 34,
+                                                                "isConstant": false,
+                                                                "isLValue": false,
+                                                                "isPure": true,
+                                                                "lValueRequested": false,
+                                                                "nodeType": "ElementaryTypeNameExpression",
+                                                                "src": "431:7:0",
+                                                                "typeDescriptions": {
+                                                                    "typeIdentifier": "t_type$_t_uint160_$",
+                                                                    "typeString": "type(uint160)"
+                                                                },
+                                                                "typeName": "uint160"
+                                                            },
+                                                            "id": 36,
+                                                            "isConstant": false,
+                                                            "isLValue": false,
+                                                            "isPure": true,
+                                                            "kind": "typeConversion",
+                                                            "lValueRequested": false,
+                                                            "names": [],
+                                                            "nodeType": "FunctionCall",
+                                                            "src": "431:12:0",
+                                                            "typeDescriptions": {
+                                                                "typeIdentifier": "t_uint160",
+                                                                "typeString": "uint160"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "expression": {
+                                                        "argumentTypes": [
+                                                            {
+                                                                "typeIdentifier": "t_uint160",
+                                                                "typeString": "uint160"
+                                                            }
+                                                        ],
+                                                        "id": 33,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "lValueRequested": false,
+                                                        "nodeType": "ElementaryTypeNameExpression",
+                                                        "src": "423:7:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_type$_t_address_$",
+                                                            "typeString": "type(address)"
+                                                        },
+                                                        "typeName": "address"
+                                                    },
+                                                    "id": 37,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "typeConversion",
+                                                    "lValueRequested": false,
+                                                    "names": [],
+                                                    "nodeType": "FunctionCall",
+                                                    "src": "423:21:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address_payable",
+                                                        "typeString": "address payable"
+                                                    }
+                                                }
+                                            ],
+                                            "expression": {
+                                                "argumentTypes": [
+                                                    {
+                                                        "typeIdentifier": "t_rational_1_by_1",
+                                                        "typeString": "int_const 1"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_stringliteral_2011dd816ee8560b7895dadee6af68017c38551f349fdd3cd77756c24130f8f9",
+                                                        "typeString": "literal_string \"asdfas\""
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_stringliteral_acaf3289d7b601cbd114fb36c4d29c85bbfd5e133f14cb355c3fd8d99367964f",
+                                                        "typeString": "literal_string \"Hello, World!\""
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_rational_0_by_1",
+                                                        "typeString": "int_const 0"
+                                                    },
+                                                    {
+                                                        "typeIdentifier": "t_address_payable",
+                                                        "typeString": "address payable"
+                                                    }
+                                                ],
+                                                "id": 28,
+                                                "name": "Image",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 22,
+                                                "src": "385:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_struct$_Image_$22_storage_ptr_$",
+                                                    "typeString": "type(struct Decentragram.Image storage pointer)"
+                                                }
+                                            },
+                                            "id": 38,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "kind": "structConstructorCall",
+                                            "lValueRequested": false,
+                                            "names": [],
+                                            "nodeType": "FunctionCall",
+                                            "src": "385:60:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_struct$_Image_$22_memory",
+                                                "typeString": "struct Decentragram.Image memory"
+                                            }
+                                        },
+                                        "src": "373:72:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_struct$_Image_$22_storage",
+                                            "typeString": "struct Decentragram.Image storage ref"
+                                        }
+                                    },
+                                    "id": 40,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "373:72:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 42,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "uploadImage",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 23,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "356:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 24,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "366:0:0"
+                        },
+                        "scope": 43,
+                        "src": "336:115:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 44,
+                "src": "27:453:0"
+            }
+        ],
+        "src": "0:480:0"
+    },
+    "functionHashes": {
+        "imageCount()": "92053b63",
+        "images(uint256)": "84856482",
+        "name()": "06fdde03",
+        "uploadImage()": "e09fb119"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "335000",
+            "executionCost": "infinite",
+            "totalCost": "infinite"
+        },
+        "external": {
+            "imageCount()": "428",
+            "images(uint256)": "infinite",
+            "name()": "infinite",
+            "uploadImage()": "infinite"
+        }
+    }
+}
